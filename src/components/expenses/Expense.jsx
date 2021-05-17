@@ -10,10 +10,13 @@ const Expense = () => {
         <div className='day font-semibold'>17</div>
       </div>
       <div className='title-container'>
-        <h3 className='font-semibold'>Expense Title</h3>
+        <h3 className='font-semibold'>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem,
+          adipisci?
+        </h3>
       </div>
       <div className='amount-container'>
-        <p className='font-semibold'>₹40.00</p>
+        <p className='font-semibold'>₹40000.00</p>
       </div>
     </Card>
   );

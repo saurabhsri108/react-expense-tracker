@@ -6,16 +6,18 @@
 
 .expense {
   margin: 1rem 0;
-  padding: 0.3rem;
+  padding: 0.3rem 1rem;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
 
 .title-container h3 {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   color: #555;
+  text-align: center;
 }
 
 .amount-container p {
@@ -23,20 +25,19 @@
   padding: 0.4rem;
   border-radius: 0.3rem;
   color: #777;
-  font-size: 1.1rem;
 }
 
 .date-container {
   background-color: gainsboro;
   padding: 0.4rem 1rem;
-  margin: 0.3rem 0;
   border-radius: 0.3rem;
   color: #777;
   text-align: center;
+  margin-top: 0.7rem;
 }
 
 .date-container .month {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   padding: 0.1rem;
 }
 
@@ -74,4 +75,34 @@
   font-weight: 600;
   color: #555;
   cursor: pointer;
+}
+
+@media (min-width: 928px) {
+  .expense {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title-container h3 {
+    font-size: 1.2rem;
+  }
+  .amount-container p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .date-container {
+    margin-top: 0;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin: 0.4rem 0;
+  }
+  .date-container .month {
+    font-size: 1.4rem;
+  }
+  .date-container .year {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+  }
+  .date-container .day {
+    font-size: 1.2rem;
+  }
 }
