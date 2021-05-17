@@ -53,10 +53,13 @@
 
 .expense-filter-container {
   background-color: gainsboro;
-  text-align: right;
   padding: 1rem;
   border-radius: 0.3rem;
   box-shadow: 0 0 1rem white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .expense-filter-container label {
@@ -104,5 +107,12 @@
   }
   .date-container .day {
     font-size: 1.2rem;
+  }
+  .expense-list {
+    flex: 2;
+  }
+  .expense-filter-container {
+    display: block;
+    text-align: right;
   }
 }

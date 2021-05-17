@@ -10,3 +10,13 @@ body {
   padding: 0;
   color: #333;
 }
+
+body #root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

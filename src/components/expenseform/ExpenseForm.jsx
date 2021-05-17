@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExpenseForm = () => {
   return (
-    <section className='form-container'>
+    <section className='card form-container'>
       <h2 className='text-center'>Expense Form</h2>
       <form>
         <div className='form-group'>
