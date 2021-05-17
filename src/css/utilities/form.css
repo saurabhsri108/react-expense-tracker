@@ -1,0 +1,28 @@
+.form-container {
+  background-color: rgb(235, 235, 235);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  margin: 0.3rem 0;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #555;
+  margin: 0.4rem 0;
+}
+
+.form-group input {
+  border: none;
+  outline: none;
+  padding: 0.525rem 0.325rem;
+  color: #777;
+  font-weight: 600;
+  border-radius: 0.3rem;
+}

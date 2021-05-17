@@ -1,0 +1,14 @@
+.card {
+  background-color: #f4f4f4;
+  box-shadow: 0 -0.4rem 0.5rem #ddd;
+  box-shadow: 0 0.4rem 0.5rem #ddd;
+  border-radius: 0.4rem;
+}
+
+.card-dark {
+  background-color: #777;
+}
+
+.card-darker {
+  background-color: #333;
+}

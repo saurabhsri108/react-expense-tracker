@@ -1,0 +1,77 @@
+.expense-list {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgb(235, 235, 235);
+}
+
+.expense {
+  margin: 1rem 0;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.title-container h3 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.amount-container p {
+  background-color: gainsboro;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.date-container {
+  background-color: gainsboro;
+  padding: 0.4rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 0.3rem;
+  color: #777;
+  text-align: center;
+}
+
+.date-container .month {
+  font-size: 1.2rem;
+  padding: 0.1rem;
+}
+
+.date-container .year {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+}
+
+.date-container .day {
+  font-size: 1;
+  padding: 0.1rem;
+}
+
+.expense-filter-container {
+  background-color: gainsboro;
+  text-align: right;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1rem white;
+}
+
+.expense-filter-container label {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-right: 0.3rem;
+  color: #777;
+}
+
+.expense-filter-container select {
+  outline: none;
+  border: none;
+  padding: 0.325rem 0.75rem;
+  border-radius: 0.3rem;
+  margin-left: 0.3rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+}

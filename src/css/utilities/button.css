@@ -1,0 +1,62 @@
+.btn {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0.325rem 0.75rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: hsl(210, 100%, 56%);
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: hsl(210, 100%, 51%);
+}
+
+.btn-success {
+  background-color: hsl(120, 100%, 20%);
+  color: white;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: hsl(120, 100%, 15%);
+}
+
+.btn-danger {
+  background-color: hsl(0, 100%, 27%);
+  color: white;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: hsl(0, 100%, 22%);
+}
+
+.btn-light {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.btn-dark {
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  background-color: hsl(0, 0%, 15%);
+}
+
+.btn-large {
+  padding: 0.75rem 1.125rem;
+}

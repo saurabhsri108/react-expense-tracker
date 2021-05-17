@@ -1,0 +1,18 @@
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.list-item {
+  color: #555;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+
+.list-item:hover,
+.list-item:focus {
+  color: black;
+}

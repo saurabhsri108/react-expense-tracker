@@ -1,0 +1,9 @@
+.bottom-shadow {
+  background-color: #f4f4f4;
+  box-shadow: 0 0.4rem 0.5rem #ddd;
+}
+
+.top-shadow {
+  background-color: #f4f4f4;
+  box-shadow: 0 -0.4rem 0.5rem #ddd;
+}
