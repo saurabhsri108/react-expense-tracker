@@ -8,16 +8,25 @@
   margin: 1rem 0;
   padding: 0.3rem 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
+  gap: 1.2rem;
+}
+
+.expense-content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 1.2rem;
+  margin: 0.5rem 0;
+  width: 100%;
 }
 
 .title-container h3 {
-  font-size: 1.125rem;
+  font-size: 0.95rem;
   color: #555;
-  text-align: center;
+  margin: 0.2rem 0;
 }
 
 .amount-container p {
@@ -25,6 +34,7 @@
   padding: 0.4rem;
   border-radius: 0.3rem;
   color: #777;
+  margin: 0.2rem 0;
 }
 
 .date-container {
@@ -33,22 +43,17 @@
   border-radius: 0.3rem;
   color: #777;
   text-align: center;
-  margin-top: 0.7rem;
 }
 
 .date-container .month {
-  font-size: 1.125rem;
-  padding: 0.1rem;
+  font-size: 1rem;
 }
-
 .date-container .year {
   font-size: 0.8rem;
-  padding: 0.1rem;
+  padding: 0.2rem 0;
 }
-
 .date-container .day {
-  font-size: 1;
-  padding: 0.1rem;
+  font-size: 1.4rem;
 }
 
 .expense-filter-container {
@@ -84,29 +89,35 @@
   .expense {
     flex-direction: row;
     justify-content: space-between;
+    gap: 1.2rem;
   }
   .title-container h3 {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
   }
   .amount-container p {
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   .date-container {
     margin-top: 0;
     padding-left: 1.4rem;
     padding-right: 1.4rem;
     margin: 0.4rem 0;
+    display: block;
+    min-width: auto;
   }
   .date-container .month {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
+    padding: 0.1rem;
   }
   .date-container .year {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0.2rem 0;
+    padding: 0.1rem;
   }
   .date-container .day {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    padding: 0.1rem;
   }
   .expense-list {
     flex: 2;
@@ -114,5 +125,8 @@
   .expense-filter-container {
     display: block;
     text-align: right;
+  }
+  .expense-content {
+    margin: auto;
   }
 }

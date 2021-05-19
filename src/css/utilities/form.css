@@ -18,6 +18,10 @@
   margin: 0.3rem 0;
 }
 
+.form-group .req {
+  color: darkred;
+}
+
 .form-group label {
   font-weight: bold;
   color: #555;

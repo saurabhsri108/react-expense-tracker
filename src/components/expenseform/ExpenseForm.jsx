@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
-const ExpenseForm = () => {
+const ExpenseForm = ({ addNewExpense }) => {
+  const titleRef = useRef();
+  const amountRef = useRef();
+  const dateRef = useRef();
+
+  const expenseFormSubmitHandler = (event) => {
+    event.preventDefault();
+    if (
+      titleRef.current.value != '' &&
+      amountRef.current.value != '' &&
+      dateRef.current.value != ''
+    ) {
+      const newExpense = {
+        id: Math.floor(Math.random() * 10000) + 1,
+        title: titleRef.current.value,
+        amount: parseFloat(amountRef.current.value),
+        date: new Date(dateRef.current.value),
+      };
+      titleRef.current.value = '';
+      amountRef.current.value = '';
+      dateRef.current.value = '';
+      addNewExpense(newExpense);
+    }
+  };
   return (
     <section className='card form-container'>
       <h2 className='text-center'>Expense Form</h2>
-      <form>
+      <form onSubmit={expenseFormSubmitHandler}>
         <div className='form-group'>
           <label htmlFor='title'>Title</label>
           <input
@@ -12,7 +35,8 @@ const ExpenseForm = () => {
             name='title'
             id='title'
             placeholder='New Title'
-            value={''}
+            required
+            ref={titleRef}
           />
         </div>
         <div className='form-group'>
@@ -24,7 +48,8 @@ const ExpenseForm = () => {
             name='amount'
             id='amount'
             placeholder='New amount'
-            value={''}
+            required
+            ref={amountRef}
           />
         </div>
         <div className='form-group'>
@@ -36,7 +61,8 @@ const ExpenseForm = () => {
             max='2022-01-01'
             id='date'
             placeholder='New date'
-            value={''}
+            required
+            ref={dateRef}
           />
         </div>
         <div className='text-center mt-2'>
