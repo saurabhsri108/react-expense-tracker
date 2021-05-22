@@ -6,11 +6,11 @@ const Main = () => {
   const [expenses, setExpenses] = useState(null);
 
   useEffect(() => {
-    const getExpenses = JSON.parse(
-      localStorage.getItem('expensetrack.expenses')
-    );
-    if (getExpenses != null) {
-      console.log(getExpenses);
+    const getExpensesJSON = localStorage.getItem('expensetrack.expenses');
+    console.log('[]');
+    // return;
+    if (getExpensesJSON != 'null') {
+      const getExpenses = JSON.parse(getExpensesJSON);
       const newExpenses = [];
       for (const expense of getExpenses) {
         const parsedDate = new Date(expense.date);
@@ -19,13 +19,17 @@ const Main = () => {
       setExpenses((previousExpenses) => {
         previousExpenses = newExpenses;
       });
-      console.log(expenses);
+      localStorage.setItem(
+        'expensetrack.expenses',
+        JSON.stringify(newExpenses)
+      );
     } else {
       localStorage.setItem('expensetrack.expenses', JSON.stringify(expenses));
     }
   }, []);
 
   useEffect(() => {
+    console.log('[expenses]');
     localStorage.setItem('expensetrack.expenses', JSON.stringify(expenses));
   }, [expenses]);
 
